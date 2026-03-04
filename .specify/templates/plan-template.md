@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Scope stays within the two BuyersGuide endpoints unless the constitution is amended.
+- Contract is updated for any API surface change (inputs/outputs/status codes).
+- AuthN/AuthZ and dealer isolation are explicitly addressed in the design.
+- Error shape/status codes are explicitly defined (no ambiguous failures).
+- Signed report URLs are treated as secrets (no logging, time-bounded).
+- Operability: structured logs include correlation id + outcome, without sensitive data.
 
 ## Project Structure
 
